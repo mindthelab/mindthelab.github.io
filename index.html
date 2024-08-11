@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mindthelab</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .spacer {
+            height: 100px;
+        }
+        .full-screen {
+            justify-content: center;
+            align-content: center;
+            background: linear-gradient(to bottom, 
+                #003366 , 
+                #004080, 
+                #0059b3, 
+                #0073e6 , 
+                #0086cc, 
+                #0099cc
+            );
+            color: #ffffff; /* Default text color */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .occupy-full-screen {
+            height: 100vh;
+            align-content: center;
+        }
+
+        .text-content {
+            text-align: center;
+            color: #ffffff; /* Default text color */
+        }
+
+        /* Tornar a barra de rolagem transparente */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;  /* Faz o track da barra de rolagem ficar transparente */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor da barra de rolagem (thumb) transparente */
+            border-radius: 10px;
+        }
+
+        body {
+            scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Firefox */
+            scrollbar-width: thin;
+        }
+    </style>
+</head>
+<body class="full-screen">
+    <div>
+        <div class="text-content">
+            <div class="occupy-full-screen">
+                <h1>
+                    heads down, <a href="https://github.com/mindthelab" target="_blank" style="color: #ffffff;">@mindthelab</a>.
+                </h1>
+                <h2>brazil, são paulo.</h2>
+                <div>
+                    <p style="font-size: 30px; font-weight: bold;">this is my precious time. my precious time i recklessly spent coding:</p>
+                </div>
+            </div>
+
+            <div>
+                <script src="timer.js"></script>
+
+                <div style="font-size: 200px; font-weight: bold;">
+                    <div class="occupy-full-screen">
+                        <p id="years"></p>
+                    </div>
+
+                    <div class="occupy-full-screen">
+                        <p id="months"></p>
+                    </div>
+
+                    <div class="occupy-full-screen">
+                        <p id="days"></p>
+                    </div>
+
+                    <div class="occupy-full-screen">
+                        <p id="hours"></p>
+                    </div>
+
+                    <div class="occupy-full-screen">
+                        <p id="minutes"></p>
+                    </div>
+
+                    <div class="occupy-full-screen">
+                        <p id="seconds"></p>
+                    </div>
+
+                    <div class="occupy-full-screen" style="font-size: 25px; font-weight: lighter;">
+                        <p>do something crazy with your time, make something you'll be proud of, something you'll never forget.</p>
+                        <p>your mind is the lab, never <a href="https://github.com/mindthelab" target="_blank" style="color: #ffffff;">@mindthelab</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
